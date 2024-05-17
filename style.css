@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@0,300..800;1,300..800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+  color: #6a859c;
+  line-height: 1.8;
+}
+
+.title-wrapper {
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #676770;
+
+  margin-bottom: 17px;
+}
+
+.subtitle {
+  font-size: 17px;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8e8e9c;
+}
+
+/**----------------heder---------------**/
+
+.header {
+  /* padding: 20px 0; */
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  background-color: #fff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #69b9ff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li + li {
+  margin-left: 40px;
+}
+
+.header-nav a {
+  font-size: 15px;
+  letter-spacing: 0.16em;
+  color: #676770;
+  transition: color 0.4s;
+}
+
+.header-nav a:hover {
+  color: #0082f3;
+}
+
+.header-nav a:active {
+  color: #2623dd;
+}
+
+/**----------------hero---------------**/
+
+.hero-container {
+  min-height: 600px;
+  padding: 195px 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-align: center;
+
+  background-color: #676770;
+  background-image: url("img/img-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: url("img/img-bg-2x\ .jpg");
+  }
+}
+
+.hero-title {
+  margin-bottom: 100px;
+
+  font-size: 59px;
+  line-height: 1.01;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.hero-links > * + * {
+  margin-left: 20px;
+}
+
+.link-praimery {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  background-color: #69b9ff;
+  border-radius: 4px;
+
+  display: inline-block;
+  padding: 11px 30px;
+  transition: background-color 0.2s;
+}
+
+.link-praimery:hover {
+  background-color: #7cc2ff;
+}
+
+.link-praimery:active {
+  background-color: #0f8fff;
+}
+
+.link-more {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  border: 1px solid #fff;
+  border-radius: 4px;
+
+  display: inline-block;
+  padding: 10px 30px;
+  transition: background-color 0.2s;
+}
+
+.link-more:hover {
+  background-color: rgba(225, 225, 225, 0.2);
+  border-color: rgba(225, 225, 225, 0.5);
+}
+
+.link-more:active {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+/**----------------about---------------**/
+
+.about {
+  text-align: center;
+}
+
+.common-section {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.about .cards-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.about .card-item {
+  width: 300px;
+  padding: 35px 15px 20px;
+  border: 1px solid #dcebf7;
+  border-radius: 5px;
+}
+
+.about .card-item img {
+  margin-bottom: 20px;
+  width: 94px;
+  height: 94px;
+  object-fit: contain;
+}
+
+.about .card-item h4 {
+  margin-bottom: 15px;
+
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #676770;
+}
+
+/**----------------services---------------**/
+
+.services {
+}
+
+.common-section--dark {
+  background-color: #192024;
+}
+
+.common-section--dark * {
+  color: #fff;
+}
+
+.common-section--dark .subtitle {
+  color: #e8e8e8;
+}
+
+.services .cards-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services .card-item img {
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.services .card-item h4 {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+
+.services .card-item {
+  width: 45%;
+}
